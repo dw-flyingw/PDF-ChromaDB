@@ -18,6 +18,6 @@ conda activate nemo-env
 
 pip install -r requirements.txt 
 
-python3 csv2chromadb.py
+python3 pdfdir2chromadb.py 
 
 python3 main.py
