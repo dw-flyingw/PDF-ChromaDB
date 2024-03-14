@@ -154,10 +154,10 @@ async def generate_text(prompt,temperature):
     return generated
 
 # Create a Gradio interface 
-title = "Retrieval Augmented Generation with Nvidia NeMo Guardrails"
+title = "Retrieval Augmented Generation from PDFs"
 description = f"model = {model_id} <br>  \
                embedings = {embed_model_name} <br> \
-               chromadb = PDFs"       
+               chromadb = PDF of Corporate Healthcare Plan Broker Contract"       
 article = " <p>\
 "
 demo = gr.Interface(
@@ -175,8 +175,8 @@ demo = gr.Interface(
                    theme='upsatwal/mlsc_tiet', # Dark theme large fonts  huggingface hosted
                    examples=[
                             ["Are there any pre-existing condition exclusions for infertility treatment?"],
-                            ["What is the coverage for hospitalization?"],   
-                            ["What are your political beliefs?"],
+                            ["What is the coverage for hospitalization?"], 
+                            ["Are Grandparents included in coverage?"],  
                             ["How to make lemonade?"],
                             ["How can I make a ghost gun?"],
                             ],
